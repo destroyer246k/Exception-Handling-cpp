@@ -1,26 +1,37 @@
-//Patel Vishwas
-//24070123072
-//A3
 #include <iostream>
 using namespace std;
 int main() {
-    float n1,n2,ans;
-    cout << "Enter Number 1:";
-    cin >> n1;
-    cout << "Enter Number 2:";
-    cin >> n2;
+    string vote;
+    int age, BJP = 0;
+    int Congress = 0;
+    cout << "Enter Age:";
+    cin >> age;
     try{
-        if(n2 == 0){
-            throw n2;
+        if(age <18){
+            throw age;
         }
         else{
-            ans = n1/n2;
-            cout << "Answer is: "<<ans<<endl;
+            cout << "You can vote\n "<<endl;
         }
     }
-    catch(float num){
-        cout << "\nCannot Divide by 0";
+    catch(int age){
+        cout << "\nYour age is "<<age<<" cannot vote.";
     }
 
+    cout << "Whom you want to Vote?(BJP/Congress)";
+    cin >> vote;
+    if(age >=18){
+    if(vote == "BJP"){
+        BJP++;
+        cout << "Thank you for Voting....";
+    }
+    else if(vote == "Congress"){
+        Congress++;
+        cout << "Thank you for Voting....";
+    }
+    else{
+        cout << "Enter correctly";
+    }
+    }
     return 0;
 }
