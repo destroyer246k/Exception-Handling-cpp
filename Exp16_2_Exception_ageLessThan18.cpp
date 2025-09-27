@@ -35,3 +35,31 @@ int main() {
     }
     return 0;
 }
+/* 
+Outputs:
+
+Case 1:
+Enter Age: 16
+Your age is 16 cannot vote.
+
+Case 2:
+Enter Age: 20
+You can vote
+
+Whom you want to Vote?(BJP/Congress) BJP
+Thank you for Voting....
+
+Case 3:
+Enter Age: 25
+You can vote
+
+Whom you want to Vote?(BJP/Congress) Congress
+Thank you for Voting....
+
+Case 4:
+Enter Age: 30
+You can vote
+
+Whom you want to Vote?(BJP/Congress) XYZ
+Enter correctly
+*/
